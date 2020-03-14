@@ -45,7 +45,7 @@ class FilmAgencyTestCase(unittest.TestCase):
                 "Authorization":
                     "Bearer {}".format(self.producer_token)
             })
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 500)
 
     def test_get_actors_success(self):
 
