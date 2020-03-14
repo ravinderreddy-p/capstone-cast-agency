@@ -1,8 +1,9 @@
 import os
 from flask_sqlalchemy import SQLAlchemy
 
-database_name = 'casting_agency'
-DATABASE_URL = 'postgres://czupthrakoiebb:40e2294faf1c2b347252e5185180fec345f2b8416daf88081b41bbf1f0f50893@ec2-3-234-109-123.compute-1.amazonaws.com:5432/d3oed7orapo5u8'
+database_name = 'cast_agency'
+DATABASE_URL = 'postgres://{}/{}'.format('localhost:5432', database_name)
+# DATABASE_URL = 'postgres://czupthrakoiebb:40e2294faf1c2b347252e5185180fec345f2b8416daf88081b41bbf1f0f50893@ec2-3-234-109-123.compute-1.amazonaws.com:5432/d3oed7orapo5u8'
 
 db = SQLAlchemy()
 
